@@ -1,12 +1,12 @@
 # Features
 
 - Graphics from the Space World 1997 Pokémon G/S prototypes:
-   - Pokémon [front](pic/swmon/) and [back](pic/swmonback/) sprites
+   - Pokémon [front sprites](pic/swmon/), [back sprites](pic/swmonback/), and [icons](gfx/icons/)
    - [Trainers](pic/swtrainer/)
    - [Map tiles](gfx/tilesets/)
    - [Overworld sprites](gfx/sprites/)
    - SGB borders (Red uses [Gold](gfx/red/sgbborder.png), Blue uses [Silver](gfx/blue/sgbborder.png))
-   - Various UIs (battle HUD, Pokémon stats, Pokédex, trainer card, Town Map, etc)
+   - Various UIs (battle HUD, Pokémon stats, Pokédex, trainer card, Town Map, trading, etc)
    - Color palettes (new as of July 16, 2018)
 - Features from the Space World prototypes:
    - Shiny Pokémon exist, using their Space World palettes, with the same DVs and encounter chances as G/S (1 in 8,192)
@@ -65,7 +65,7 @@ There are *no* new Pokémon, maps, moves, or items (except the Heart Stone). Thi
 
 ### Higher shiny odds
 
-If you want nearly 2% of wild Pokémon to be shiny like in the Space World demo, then follow the instructions in [INSTALL.md](INSTALL.md) to build your own ROM—but before running `make`, edit [main.asm](main.asm), replacing this:
+If you want nearly 2% of wild Pokémon to be shiny like in the Space World demo, then follow the instructions in [INSTALL.md](INSTALL.md) to build your own ROM—but before running `make`, edit [engine/shiny.asm](engine/shiny.asm), replacing this:
 
 ```
 IsMonShiny:
